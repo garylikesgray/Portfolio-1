@@ -32,6 +32,12 @@ body{
     
 }
 
+ul li a:hover {
+  background-color: rgb(90, 89, 88);
+  color: brown;
+  border-radius: 70px;
+}
+
 .nav ul li{
     display: inline;
     margin: 0 10px;
