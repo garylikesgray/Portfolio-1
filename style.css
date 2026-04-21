@@ -113,6 +113,8 @@ ul li a:hover {
 
 .pic img{
     border-radius: 40px;
+    width: 300px;
+    height: auto;
 }
 
 .pic{
@@ -169,6 +171,9 @@ h2{
 
 .all{
     text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 20px;
 }
 
 .pop{
@@ -179,8 +184,8 @@ h2{
 .projects img{
     border-radius: 30px;
     margin: 20px;
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     justify-content: space-evenly;
 }
 
@@ -206,17 +211,19 @@ section{
     padding: 30px;
     background-color: antiquewhite;
     color: black;
+    width: 100%;
 }
 
 .connect{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 50px;
     font-size: 22px;
     padding: 30px;
     background-color: antiquewhite;
     color: black;
-    
+    width: 100%;
 }
 
 .bay a{
@@ -228,12 +235,12 @@ section{
 .card{
     background-color: #fff;
     padding: 20px;
-    margin: 10px;
+    margin: 0 5px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     font-size: 25px;
-    display: grid;
-    justify-content: space-evenly;
+    flex: 1;
+    text-align: center;
 }
 
 
@@ -248,6 +255,56 @@ button:hover {
   background-color: gray;
   color: black;
   border-radius: 70px;
+}
+
+.form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-bottom: 5px;
+    color: black;
+    text-align: left;
+}
+
+.form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.form button:hover {
+    background-color: gray;
 }
 
 
