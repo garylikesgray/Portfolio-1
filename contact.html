@@ -1,46 +1,78 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Contact - Gareth's Portfolio</title>
 
-    <link rel="stylesheet" href="stylely.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav ul li {
+                margin: 5px 0;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .bay {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+        @media (min-width: 1200px) {
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <header>
-            <div class="nav">
-                <label class="hero">Contact Page</label>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <h1> His Socials and Network </h1>
-        </header>
-    </div>
+    <div class="nav">
+        <label class="hero">Gareth</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </div >
     <div class="body">
-        <section>
-            <article>
-                <h2>Where You can get intouch with him</h2>
-                <p>
+        <div class="pic"><img src="image0.jpeg" alt="" width="100%" height="auto" ></div>
+        <div>
+            <h1>Contact <span class="red">Gareth</span></h1>
+            <p> 
+              Get in touch with Gareth for collaborations, projects, or just to say hello.
+            </p>
+            <button class="bay"><a href="mailto:mpimirazeygareth@gmail.com">Email Me</a></button>
+        </div>
+    </div>
+    <div >
+        <h2>Contact <span> <strong>Details</strong></span></h2>
+        <div class="just">
+        <p>
                 LinkedIn - Gareth Mpimirazey <br>
                 Email - mpimirazeygareth@gmail.com <br>
-                Instragram - Artitude.Inc <br>
+                Instagram - Artitude.Inc <br>
                 Phone - 0777630653
-                
-                </p>
-            </article>  
-        </section>
-    </div>
-    <div>
-        <footer>
-            ALL RIGHTS RESERVED
-        </footer>
-    </div>
+        </p>
+        </div>
     
 </body>
 </html>

@@ -3,39 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>About - Gareth's Portfolio</title>
 
-    <link rel="stylesheet" href="styled.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav ul li {
+                margin: 5px 0;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .bay {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+        @media (min-width: 1200px) {
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <header>
-            <div class="nav">
-                <label class="hero">About Page</label>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <h1>  </h1>
-        </header>
-    </div>
+    <div class="nav">
+        <label class="hero">Gareth</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </div >
     <div class="body">
-        <section>
-            <article>
-                <h2></h2>
-                <p>
-                  
-                </p>
-            </article>  
-        </section>
+        <div class="pic"><img src="image0.jpeg" alt="" width="100%" height="auto" ></div>
+        <div>
+            <h1>About <span class="red">Gareth</span></h1>
+            <p> 
+              Gareth is a sophisticated young man driven by ambition, diving in the world of entrepreneurship and exploring his sense of purpose. Gareth offers services like frontend and backend development as well as design. He is also a visionary, innovator and businessman. He helps businesses grow and is a great analyst when it comes to strategic thinking.
+            </p>
+        </div>
     </div>
-    <div>
-        <footer>
-            ALL RIGHTS RESERVED
-        </footer>
     </div>
     
 </body>

@@ -3,40 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Products - Gareth's Portfolio</title>
 
-    <link rel="stylesheet" href="styler.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav ul li {
+                margin: 5px 0;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .bay {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+        @media (min-width: 1200px) {
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <header>
-            <div class="nav">
-                <label class="hero">Products Page</label>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <h1> Products and Services </h1>
-        </header>
-    </div>
+    <div class="nav">
+        <label class="hero">Gareth</label>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </div >
     <div class="body">
-        <section>
-            <article>
-                <h2>Subscriptions and Cart</h2>
-                <p>
-                    Products are coming soon 
-                </p>
-            </article>  
-        </section>
+        <div class="pic"><img src="port3.jpg" alt="" width="100%" height="auto" ></div>
+        <div>
+            <h1>Products & <span class="red">Services</span></h1>
+            <p> 
+              Explore Gareth's offerings in software development, design, and business solutions.
+            </p>
+        </div>
     </div>
-    <div>
-        <footer>
-            ALL RIGHTS RESERVED
-        </footer>
-    </div>
+    <div >
+        <h2>Products <span> <strong>Coming Soon</strong></span></h2>
+        <div class="just">
+        <p>
+                Subscriptions and Cart features are currently under development. Stay tuned for updates on Gareth's innovative products and services.
+        </p>
+        <img src="port2.png" alt="Coming Soon Image" style="max-width: 100%; height: auto;">
+        </div>
     
 </body>
 </html>

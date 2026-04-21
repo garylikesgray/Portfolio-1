@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,41 @@
     <title>Gareth's Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 768px) {
+            .nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav ul li {
+                margin: 5px 0;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .bay {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+        @media (min-width: 1200px) {
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 2.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="nav">
@@ -19,7 +54,7 @@
         </ul>
     </div >
     <div class="body">
-        <div class="pic"><img src="image0.jpeg" alt="" width="auto" height="700px" ></div>
+        <div class="pic"><img src="image0.jpeg" alt="" width="100%" height="auto" ></div>
         <div>
             <h1>Makadii! <span class="red">Say Less</span>, <span class="green">Do More</span>.</h1>
             <p> 
@@ -46,7 +81,7 @@
         <div class="projects">
             <div class="all">
                 <div>
-                  <img src="port.png" alt="">
+                  <img src="port.png" alt="" width="100%" height="auto">
                 </div>
                 <div class="pop" >
                   <p>
@@ -57,7 +92,7 @@
 
             <div class="all">
                 <div>
-                   <img src="port3.jpg" alt="">
+                   <img src="port3.jpg" alt="" width="100%" height="auto">
                 </div>
                <div class="pop">
                  <p>
@@ -82,7 +117,7 @@
 
         </div>
         <div class="design">
-            <img src="port2.png" alt="" width="100%">
+            <img src="port2.png" alt="" width="100%" height="auto">
         </div>
     </div>
 
