@@ -5,54 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - Gareth's Portfolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        @media (max-width: 768px) {
-            .nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            .nav ul li {
-                margin: 5px 0;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-            p {
-                font-size: 0.9rem;
-            }
-            .bay {
-                font-size: 0.9rem;
-                padding: 8px 16px;
-            }
-        }
-        @media (min-width: 1200px) {
-            h1 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 2.5rem;
-            }
-            p {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="nav">
         <label class="hero">Gareth</label>
-        <ul>
+
+        <!-- Hamburger button -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Desktop nav -->
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            
         </ul>
-    </div >
+    </div>
+
+    <!-- Mobile menu (right side) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
     <div class="body">
         <div class="pic"><img src="port3.jpg" alt="" width="100%" height="auto" ></div>
         <div>
@@ -70,12 +57,28 @@
         </p>
         <img src="port2.png" alt="Coming Soon Image" style="max-width: 100%; height: auto;">
         </div>
-    
+    </div>
+
     <div>
         <footer>
             ALL RIGHTS RESERVED
         </footer>
     </div>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
 </body>
 </html>

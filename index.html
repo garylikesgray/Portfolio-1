@@ -5,133 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gareth's Portfolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        @media (max-width: 768px) {
-            .nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            .nav ul li {
-                margin: 5px 0;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-            p {
-                font-size: 0.9rem;
-            }
-            .bay {
-                font-size: 0.9rem;
-                padding: 8px 16px;
-            }
-        }
-        @media (min-width: 1200px) {
-            h1 {
-                font-size: 3rem;
-            }
-            h2 {
-                font-size: 2.5rem;
-            }
-            p {
-                font-size: 1.2rem;
-            }
-        }
-    </style>
 
-    
 </head>
 <body>
     <div class="nav">
         <label class="hero">Gareth</label>
 
-           <!-- Hamburger button -->
-    <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <!-- Hamburger button -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Desktop nav -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </div>
 
+    <!-- Mobile menu (right side) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
-        <ul>
-
-
-        <nav class="nav">
-    
-
- 
-    <!-- Desktop nav -->
-    <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-</nav>
-
-<!-- Mobile hamburger menu (right side) -->
-<div class="mobile-menu" id="mobileMenu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-</div>
-
-<!-- overlay -->
-<div class="overlay" id="overlay"></div>
-    </div >
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
     <div class="body">
         <div class="pic"><img src="image0.jpeg" alt="" ></div>
         <div>
             <h1>Makadii! <span class="red">Say Less</span>, <span class="green">Do More</span>.</h1>
             <p> 
               My name is <span> <strong>Gareth B Mpimirazey.</strong></span> I am a <br>
-              software developer, enterprenuer <br>
+              software developer, entrepreneur <br>
               and tech innovator. This is my Portfolio. <br>
             </p>
             <button class="bay"><a href="contact.html">Let's connect</a></button> 
         </div>
     </div>
-    <div >
-        <h2>About <span> <strong>Gareth.</strong></span></h2>
+    <div class="about-wrapper">
+        <h2>About <span><strong>Gareth.</strong></span></h2>
         <div class="just">
-        <p>
-                <span><strong>Gareth</strong></span> is a sophisticated young man driven by ambition <br>
-                diving in the world of enterprenuership and exploring his <br>
-                sense of purpose. Gareth offers services like frontend and <br>
-                backend development as well as design. He is also a visionary, <br>
-                innovator and businessman. He helps businesses grow and <br>
-                is a great analyst when it comes to strategic thinking. <br> 
-        </p>
+            <p>
+                <strong>Gareth</strong> is a sophisticated young man driven by ambition,
+                diving into the world of entrepreneurship and exploring his
+                sense of purpose. Gareth offers services like frontend and
+                backend development as well as design. He is also a visionary,
+                innovator and businessman. He helps businesses grow and
+                is a great analyst when it comes to strategic thinking.
+            </p>
         </div>
-           <h2>Projects</h2>
+    </div>
+
+    <div class="projects-wrapper">
+        <h2>Projects</h2>
         <div class="projects">
             <div class="all">
                 <div>
-                  <img src="port.png" alt="" >
+                    <img src="port.png" alt="Design Certifications">
                 </div>
-                <div class="pop" >
-                  <p>
-                    <span>Design</span> Certifications.
-                  </p>
-               </div>
+                <div class="pop">
+                    <p><span>Design</span> Certifications.</p>
+                </div>
             </div>
 
             <div class="all">
                 <div>
-                   <img src="port3.jpg" alt="" >
+                    <img src="port3.jpg" alt="Graphic Designs">
                 </div>
-               <div class="pop">
-                 <p>
-                    Graphic <span>Designs.</span>
-                 </p>
+                <div class="pop">
+                    <p>Graphic <span>Designs.</span></p>
                 </div>
             </div>
-
         </div>
         <div class="design">
             <img src="port2.png" alt="" width="100%" height="auto">
@@ -169,5 +124,20 @@
         </footer>
     </div>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
 </body>
 </html>
